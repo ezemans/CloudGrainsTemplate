@@ -1,0 +1,685 @@
+/*---Resets---*/
+@import 'normalize';
+@import 'reset';
+/*---Colors---*/
+dark100 = #1f2021;
+dark50 = #a8a8a8;
+cyan100 = #0f748f;
+cyanLight100 = #00c7fc;
+cyanLight80 = #19c8fa;
+body
+	background-color white
+	font-family 'Open Sans', san-serif
+	font-size 16px
+.container
+	width 100%
+.header
+	&__modules
+		width 100%
+		background-color dark100
+		height 3.125rem
+		position fixed
+		top 0
+		z-index 20
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content space-between
+		padding-left 5%
+		padding-right 5%
+		&__logo
+			color white
+			line-height 3.125rem
+		&__menu
+			width 53.73%
+			&__container
+				width 100%
+				line-height 3.125rem
+				&__list
+					width 100%
+					display flex
+					justify-content flex-end
+					&__item
+						list-style-type none
+						display inline
+						margin-left 1.87rem
+						a 
+							color white
+							text-decoration none
+							text-transform uppercase
+							font-size 0.81rem
+							transition color 300ms ease-in
+							&:hover
+								color cyanLight100
+			&__mobile
+				display none
+	&__hero
+		width 100%
+		&__article
+			width 100%
+			position relative
+			&__img
+				img
+					width 100%
+					height auto
+			&__text
+				width 55%
+				position absolute
+				z-index 10
+				top 30%
+				left 0%
+				background-color cyan100
+				padding 4.06rem 0 5.62rem 10.98%
+				color white
+				&__title
+					margin-bottom 2.81rem
+					a
+						color @color
+						text-transform uppercase
+						text-decoration none
+						font-weight 600
+				&__content
+					line-height 1.6rem
+					font-weight 300
+/*--Content--*/
+.content
+	width 80%
+	background-color white
+	margin 0 auto
+	padding 6.25rem 0 4.35rem 0
+	&__title
+		text-align center
+		font-size 1.87rem
+		text-transform uppercase
+		font-weight 400
+	&__subtitle
+		color dark50
+		font-weight 300
+		text-align center
+		width 41.57%
+		margin 1.87rem auto 6.25rem auto
+	&__services
+		width 100%
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		&__article
+			width 50%
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			&__icon
+				order 1
+				display block
+				width 30%
+				font-family 'Fontawesome'
+				font-size 3rem
+				text-align center
+			.fa 
+				font-size 3rem
+			&__text
+				order 2
+				width 70%
+				padding 0 0 4.68rem 0 
+				&__title
+					color cyanLight80
+					font-size 1.25rem
+				&__p
+					color dark50
+					line-height 1.6rem
+					font-size 0.85rem
+	&__menu /*---> Portfolio */
+		text-align center
+		&__item
+			list-style-type none
+			display inline
+			a
+				color dark100
+				text-decoration none
+				font-size 0.81rem
+				text-transform uppercase
+				padding 0.81rem 1.31rem 0.81rem 1.31rem
+				transition all 700ms ease-in
+				&:hover
+					background-color cyanLight100
+					color white
+	&__about /*--> About */
+		width 100%
+		overflow hidden
+		position relative
+		height 20rem
+		&__img
+			position absolute
+			bottom -5%
+			left 35%
+			z-index 10
+			width 30%
+			text-align center
+			img 
+				width 100%
+				height auto
+	&--paddingOff
+		padding 6.25rem 0 0rem 0
+	&__pricing /*--> Pricing*/
+		border none
+		&__container
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content space-between
+			&__block
+				width 20%
+				list-style-type none
+				border-top 1px solid cyanLight80
+				&__list
+					display flex
+					flex-direction column
+					text-align center
+					list-style-type none
+					&__item
+						font-size 1rem
+						padding 1.5rem 0
+						&--price
+							font-size 3.71rem
+							border-bottom 1px solid cyanLight80
+							&:before
+								content "$"
+								font-size 1rem
+								vertical-align middle
+							&:after
+								content "/mo"
+								font-size 1rem
+								vertical-align middle
+						&--feature
+							border-bottom 1px solid cyanLight80
+							width 70%
+							margin 0 auto
+							padding 1.5rem 0
+						&__button
+							border 1px solid cyanLight80
+							background-color white
+							padding 0.93rem 2rem
+							transition all 700ms ease-in
+							&:hover
+								background-color cyanLight100
+	&__contact /*--> Contact*/
+		border none
+		&__container
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content space-between
+			&__form
+				width 60%
+				font-size 0.81rem
+				&__text
+					height 3.6rem
+					background-color white
+					border 1px solid dark50
+					width 100%
+					margin-bottom 1rem
+					padding-left 1rem
+				&__textarea
+					height 6.6rem
+					background-color white
+					border 1px solid dark50
+					width 100%
+					margin-bottom 1rem
+					padding 1rem 1rem
+				&__button
+					height 3.6rem
+					width 6rem
+					color white
+					text-transform uppercase
+					border none
+					background-color cyanLight100
+					float right
+					transition all 700ms ease-in
+					&:hover
+						background-color cyan100
+			&__data
+				width 30%
+				font-size 0.81rem
+				line-height 1.4rem
+							
+/*--Wide--*/
+.wide
+	width 100%
+	background-color dark100
+	&__article
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		align-item middle
+		padding 5.87rem 0
+		overflow hidden
+		&__img
+			order 1
+			width 50%
+			position relative
+			img 
+				position absolute
+				bottom -9rem
+				right 5rem
+		&__content
+			order 2
+			padding 3.43rem 0 3.43rem 3.43rem
+			background-color cyan100
+			width 50%
+			order 2
+			height 20.9rem
+			color white
+			&__title
+				font-size 1.25rem
+				font-weight 400
+				text-transform uppercase
+			&__list
+				margin-top 2.06rem
+				&__item
+					list-style-type none
+					font-weight 300
+					font-size 1rem
+					line-height 2.3rem
+					&::before
+						font-family 'Fontawesome'
+						content "\f10b"
+						margin-right 1rem
+	&__portfolio /*---> Portfolio */
+		background-color white
+		&__items
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			background-color white
+			&__img
+				width 25%
+				box-sizing border-box
+				margin-bottom -5px
+				img
+					width 100%
+					height auto
+					line-height 0
+					border none
+		&__button
+			display block
+			margin 3rem auto
+			width 10.62rem
+			height 3.6rem
+			background-color cyanLight80
+			color white
+			text-transform uppercase
+			border none
+			font-weight 300
+			transition all 700ms ease-in
+			&:hover
+				background-color cyan100
+.wide__video
+	background-color dark100
+	padding 11.25rem 0
+	width 100%
+	&__info
+		background-color cyan100
+		color white
+		text-align center
+		padding 3.75rem 0
+		&__title
+			text-transform uppercase
+			font-weight 400
+			margin-bottom 2.5rem
+		&__desc
+			font-size 0.81rem
+		&__button
+			display block
+			margin-top 2.5rem
+			margin-left auto
+			margin-right auto
+			width 8.12rem
+			background-color dark100
+			color white
+			text-transform uppercase
+			border none
+			font-weight 300
+			padding 0.56rem 0 0.75rem 0
+			font-size 0.81rem
+			transition all 700ms ease-in
+			&:hover
+				background-color cyanLight100
+				width 100%
+				color dark100
+.wide__status
+	background-color dark100
+	padding 6.25rem 0
+	width 100%
+	&__info
+		background-color cyan100
+		color white
+		width 90%
+		padding 3.75rem 0
+		margin 0 auto
+		&__list
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			&__item
+				width 25%
+				list-style-type none
+				flex 0 0 auto
+				text-align center
+				display flex
+				flex-direction column
+				&__icon
+					background-color white
+					color cyan100
+					width 3rem
+					margin 0 auto 0.81rem auto
+					border-radius 50%
+					line-height 3rem
+					height 3rem
+				&__number
+					font-size 3.17rem
+					font-weight 600
+					margin 0 auto 0.81rem auto
+				&__desc
+					font-size 0.81rem
+					margin 0 auto
+.wide__newsletter
+	background-color dark100
+	padding 6.25rem 0
+	width 100%
+	&__block
+		color white
+		width 90%
+		padding 1rem 0
+		margin 0 auto
+		&__list
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content space-between
+			&__item
+				width 45%
+				list-style-type none
+				flex 0 0 auto
+				&__form
+					border 1px solid white
+					width 100%
+					display flex
+					flex-direction row
+					flex-wrap wrap
+					&__mail
+						width 80%
+						border 0
+						height 3.6rem
+						background-color dark100
+						color dark50
+						padding-left 1rem
+						font-size 0.81rem
+					&__button
+						width 20%
+						border 0
+						height 3.6rem
+						background-color cyanLight100
+						color white
+						font-size 0.81rem
+						text-transform uppercase
+						transition all 700ms ease-in
+						&:hover
+							background-color cyan100
+				&__number
+					font-size 3.17rem
+					font-weight 600
+					margin 0 auto 0.81rem auto
+				&__desc
+					font-size 0.81rem
+					margin 0 auto
+.wide__footer
+	background-color dark100
+	padding 3.25rem 0
+	width 100%
+	&__block
+		color white
+		width 90%
+		padding 1rem 0
+		margin 0 auto
+		text-align center
+		&__im
+			font-size 1.2rem
+			font-weight 300
+		&__social
+			border none
+			margin 3rem 0
+			&__item
+				list-style-type none
+				display inline
+				margin 0 1rem
+				&__icon
+					color dark50
+					text-decoration none
+		&__copy
+			font-size 0.81rem
+			color dark50
+			a
+				color @color
+				text-decoration none
+@media (max-width:768px)
+	.header
+		&__modules
+			width 100%
+			background-color dark100
+			height 3.125rem
+			position fixed
+			top 0
+			z-index 20
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			justify-content space-between
+			padding-left 5%
+			padding-right 5%
+			&__logo
+				color white
+				line-height 3.125rem
+			&__menu
+				width 43.73%
+				text-align right
+				line-height 3.125rem
+				&__container
+					width 100%
+					height 0rem
+					overflow hidden
+					transition height 500ms ease-in
+					background-color dark100
+					margin-top -3px
+					&__list
+						width 100%
+						display flex
+						justify-content flex-start
+						flex-direction column
+						padding-right 1rem
+						&__item
+							list-style-type none
+							display block
+							a 
+								color white
+								text-decoration none
+								text-transform uppercase
+								font-size 0.81rem
+					&--on
+						height 20rem
+						border-bottom-right-radius 5px
+						border-bottom-left-radius 5px
+				&__mobile
+					background-color dark100
+					height 30px
+					display inline
+					border 0
+					color white
+					&:focus
+						outline 0 !important
+		&__hero
+			width 100%
+			&__article
+				width 100%
+				&__img
+					display block
+					margin-bottom 0rem
+					img 
+						width 100%
+						height auto
+				&__text
+					width 100%
+					position relative
+					display block
+					background-color cyan100
+					padding 2.06rem 0 3.62rem 8.98%
+					color white
+					top -0.5rem
+					&__title
+						margin-bottom 1.81rem
+						font-size 1.5rem
+						a
+							color @color
+							text-transform uppercase
+							text-decoration none
+							font-weight 600
+					&__content
+						line-height 1.6rem
+						font-weight 300
+						font-size 0.81rem
+	.content
+		&__subtitle
+			color dark50
+			font-weight 300
+			text-align center
+			width 41.57%
+			margin 0.87rem auto 3.25rem auto
+		&__services
+			width 100%
+			&__article
+				width 100%
+				flex-direction column
+				text-align center
+				&__icon
+					display block
+					width 100%
+					font-size 5rem
+					text-align center
+					margin-bottom 2rem
+				&__text
+					width 100%
+		&__menu /*---> Portfolio */
+				&__item
+					line-height 3rem
+		&__about /*--> About */
+				&__img
+					position absolute
+					bottom -2%
+					left 20%
+					z-index 10
+					width 60%
+					text-align center
+					img 
+						width 100%
+						height auto
+		&__pricing /*--> Pricing*/
+					&__container
+						flex-direction column
+						&__block
+							width 100%
+							margin-bottom 3rem
+				&__contact /*--> Contact*/
+					&__container
+						flex-direction column
+						&__form
+							width 100%
+						&__data
+							width 100%
+							margin-top 2rem
+	.wide
+		width 100%
+		background-color dark100
+		&__article
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			align-item middle
+			padding 5.87rem 0
+			overflow hidden
+			&__img
+				order 1
+				width 50%
+				position relative
+				img 
+					position absolute
+					bottom -9rem
+					right 3rem
+			&__content
+				order 2
+				padding 1.43rem 0 1.43rem 1.43rem
+				background-color cyan100
+				width 50%
+				order 2
+				height 20.9rem
+				color white
+				&__title
+					font-size 1rem
+					font-weight 400
+					text-transform uppercase
+				&__list
+					margin-top 1.06rem
+					&__item
+						list-style-type none
+						font-weight 300
+						font-size 1rem
+						line-height 2.3rem
+						&::before
+							font-family 'Fontawesome'
+							content "\f10b"
+							margin-right 0.5rem
+		&__portfolio /*---> Portfolio */
+				background-color white
+				&__items
+					display flex
+					flex-direction row
+					flex-wrap wrap
+					background-color white
+					&__img
+						width 50%
+						box-sizing border-box
+						margin-bottom -5px
+						img
+							width 100%
+							height auto
+							line-height 0
+							border none
+	.wide__status
+		padding 3.25rem 0
+		&__info
+			width 90%
+			padding 2.75rem 0
+			&__list
+				flex-direction column
+				&__item
+					width 100%
+					&__icon
+						margin 0 auto 0.21rem auto
+						border-radius 50%
+						line-height 3rem
+						height 3rem
+					&__number
+						font-weight 600
+						margin 0 auto 0.21rem auto
+					&__desc
+						font-size 0.81rem
+						margin 0 auto 2rem auto
+	.wide__newsletter
+		padding 3.25rem 0
+		&__block
+			&__list
+				display flex
+				flex-direction column
+				flex-wrap wrap
+				&__item
+					width 100%
+					&__form
+						margin-bottom 2rem
